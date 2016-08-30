@@ -1,0 +1,23 @@
+{
+  "name": "@akbr/make-path",
+  "version": "1.0.0",
+  "description": "Defines and enforces an array-based \"path\" convention.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akbr/make-path.git"
+  },
+  "keywords": [
+    "path",
+    "array"
+  ],
+  "author": "Aaron Rieke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akbr/make-path/issues"
+  },
+  "homepage": "https://github.com/akbr/make-path#readme"
+}
