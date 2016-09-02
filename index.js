@@ -1,19 +1,13 @@
 module.exports = function makePath(input) {
-  var type;
+  var type = typeof(input);
 
-  if (input === undefined) {
-    return [];
-  }
-
-  type = typeof(input);
-
-  if (type === "string") {
+  if (Array.isArray(input)) {
+    return input;
+  } else if (type === "string") {
     return input.split(".");
   } else if (type === "number") {
     return [input];
-  } else if (Array.isArray(input)) {
-    return input;
   } else {
-    throw new Error("Invalid input supplied for path. Expected string, number, or array.");
+    return [];
   }
 };

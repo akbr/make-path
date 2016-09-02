@@ -7,9 +7,11 @@ A path is an array intended to be interpreted as a list of keys. Useful for nest
 ## API
 ### makePath(input) => path
 Valid `input`:
-* a string (dot notation allowed);
+* a string (splits on periods);
 * a number;
-* an array (simply be returned). 
+* an array (simply returned). 
+
+Invalid `input` returns an empty path.
 
 ## Usage
 ```javascript
@@ -17,5 +19,8 @@ makePath("id"); // ["id"]
 makePath("users.0.name"); // ["users", "0", "name"]
 makePath(1); // [1]
 makePath(["foo", "bar"]); // ["foo", "bar"]
-makePath({foo:"bar"}); // throws
+makePath({foo:"bar"}); // []
 ```
+
+## Changelog
+1.0.1 - Invalid input now returns an empty path.

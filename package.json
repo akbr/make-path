@@ -1,6 +1,6 @@
 {
   "name": "@akbr/make-path",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Defines and enforces an array-based \"path\" convention.",
   "main": "index.js",
   "scripts": {

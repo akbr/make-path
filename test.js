@@ -22,8 +22,13 @@ assert.equal(
   makePath(path), path
 );
 
-assert.throws(() => {
-  makePath({})
-});
+// Invalid values returned as empty paths.
+assert.deepEqual(
+  makePath({}), []
+)
+
+assert.deepEqual(
+  makePath(null), []
+)
 
 console.log("Success!");
